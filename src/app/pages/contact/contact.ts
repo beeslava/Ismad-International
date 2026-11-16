@@ -1,4 +1,4 @@
-import {
+﻿import {
   Component,
   OnInit,
   ChangeDetectorRef
@@ -178,9 +178,9 @@ export class Contact implements OnInit {
         senderName: name,
         senderRole: 'public',
 
-        // D-Littles administration
+        // ISMAD INTERNATIONAL ACADEMY administration
         recipientId: 'admin',
-        recipientName: 'D-Littles Administration',
+        recipientName: 'ISMAD INTERNATIONAL ACADEMY Administration',
         recipientRole: 'admin',
 
         subject,
@@ -210,7 +210,7 @@ export class Contact implements OnInit {
       // =====================================================
 
       this.successMessage =
-        'Thank you for contacting D Little Private School. Your message has been sent to the school administration.';
+        'Thank you for contacting ISMAD INTERNATIONAL ACADEMY. Your message has been sent to the school administration.';
 
       this.resetForm();
 
@@ -293,4 +293,5 @@ export class Contact implements OnInit {
     this.cdr.detectChanges();
   }
 }
+
 

@@ -1,4 +1,4 @@
-import {
+﻿import {
   ChangeDetectorRef,
   Component,
   OnInit
@@ -1080,7 +1080,7 @@ export class SubAdmins implements OnInit {
 
     const text = [
 
-      `D Little Private School`,
+      `ISMAD INTERNATIONAL ACADEMY`,
 
       `Sub Admin ID: ${this.credentials.subAdminId}`,
 

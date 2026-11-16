@@ -1,4 +1,4 @@
-<div class="report-card-page">
+﻿<div class="report-card-page">
 
   <!-- =====================================================
        PAGE HEADER
@@ -71,7 +71,7 @@
   >
 
     <div class="empty-icon">
-      👨‍👩‍👧
+      ðŸ‘¨â€ðŸ‘©â€ðŸ‘§
     </div>
 
     <h3>No Children Found</h3>
@@ -108,7 +108,7 @@
         [value]="child.studentId"
       >
         {{ child.fullName }}
-        — {{ child.studentId }}
+        â€” {{ child.studentId }}
       </option>
 
     </select>
@@ -151,13 +151,13 @@
 <div class="school-header">
 
   <div class="school-logo">
-    DL
+    IA
   </div>
 
   <div class="school-information">
 
     <h1>
-      D LITTLE PRIVATE SCHOOL
+      ISMAD INTERNATIONAL ACADEMY
     </h1>
 
     <p class="school-subtitle">
@@ -212,7 +212,7 @@
     </span>
 
     <strong>
-      {{ className || selectedChild.className || '—' }}
+      {{ className || selectedChild.className || 'â€”' }}
     </strong>
 
   </div>
@@ -225,7 +225,7 @@
     </span>
 
     <strong>
-      {{ sessionName || '—' }}
+      {{ sessionName || 'â€”' }}
     </strong>
 
   </div>
@@ -238,7 +238,7 @@
     </span>
 
     <strong>
-      {{ termName || '—' }}
+      {{ termName || 'â€”' }}
     </strong>
 
   </div>
@@ -251,7 +251,7 @@
     </span>
 
     <strong>
-      {{ parentName || '—' }}
+      {{ parentName || 'â€”' }}
     </strong>
 
   </div>
@@ -290,7 +290,7 @@
 >
 
   <div class="empty-report-icon">
-    📋
+    ðŸ“‹
   </div>
 
   <h3>
@@ -421,13 +421,13 @@
               class="grade-badge"
               [ngClass]="getGradeClass(result.grade)"
             >
-              {{ result.grade || '—' }}
+              {{ result.grade || 'â€”' }}
             </span>
 
           </td>
 
           <td class="remark">
-            {{ result.remark || '—' }}
+            {{ result.remark || 'â€”' }}
           </td>
 
         </tr>
@@ -594,7 +594,7 @@
       >
 
         <span>
-          🖨️
+          ðŸ–¨ï¸
         </span>
 
         <span>
@@ -623,7 +623,7 @@
         <span
           *ngIf="!exporting"
         >
-          📊
+          ðŸ“Š
         </span>
 
         <span
@@ -656,3 +656,4 @@
   </section>
 
 </div>
+

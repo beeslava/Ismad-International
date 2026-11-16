@@ -209,7 +209,7 @@ export class AdmissionPayment implements OnInit {
    *
    * Do NOT put the Paystack secret key here.
    *
-   * Angular only communicates with the D-Littles backend.
+   * Angular only communicates with the ISMAD INTERNATIONAL ACADEMY backend.
    *
    * The Paystack secret key remains inside the backend
    * environment variables.
@@ -674,7 +674,7 @@ export class AdmissionPayment implements OnInit {
   //
   // Angular
   //    ↓
-  // D-Littles Backend
+  // ISMAD INTERNATIONAL ACADEMY Backend
   //    ↓
   // Paystack Initialize
   //    ↓
@@ -682,7 +682,7 @@ export class AdmissionPayment implements OnInit {
   //    ↓
   // Angular Callback
   //    ↓
-  // D-Littles Backend Verify
+  // ISMAD INTERNATIONAL ACADEMY Backend Verify
   //    ↓
   // Firebase
   //

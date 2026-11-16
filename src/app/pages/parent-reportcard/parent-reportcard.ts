@@ -1,4 +1,4 @@
-import {
+﻿import {
 Component,
 OnInit,
 ChangeDetectorRef
@@ -946,7 +946,7 @@ try {
   const rows: any[][] = [
 
     [
-      'D LITTLE PRIVATE SCHOOL'
+      'ISMAD INTERNATIONAL ACADEMY'
     ],
 
     [
@@ -1246,3 +1246,4 @@ return child.id;
 }
 
 }
+

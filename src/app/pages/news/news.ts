@@ -1,4 +1,4 @@
-import {
+﻿import {
   Component,
   OnInit,
   ChangeDetectorRef
@@ -142,7 +142,7 @@ export class News implements OnInit {
 
             imageUrl: data.imageUrl || '',
 
-            authorName: data.authorName || 'D Little Private School',
+            authorName: data.authorName || 'ISMAD INTERNATIONAL ACADEMY',
 
             status: data.status || 'published',
 
@@ -363,4 +363,5 @@ export class News implements OnInit {
     return item.id;
   }
 }
+
 

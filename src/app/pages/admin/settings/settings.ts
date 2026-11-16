@@ -1,4 +1,4 @@
-import {
+﻿import {
   ChangeDetectorRef,
   Component,
   OnInit
@@ -61,7 +61,7 @@ interface SchoolSettings {
 
 const DEFAULT_SETTINGS: SchoolSettings = {
 
-  schoolName: 'D Little Private School',
+  schoolName: 'ISMAD INTERNATIONAL ACADEMY',
 
   motto: '',
 
