@@ -1,43 +1,43 @@
+
 /* =========================================================
-   HERO
+   ISMAD INTERNATIONAL ACADEMY - ADMISSIONS
 ========================================================= */
+
+/* HERO */
 
 .admissions-hero {
   padding: 110px 0;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--school-primary),
-      var(--school-primary-dark)
-    );
-
+  background: linear-gradient(
+    125deg,
+    var(--school-primary-dark),
+    var(--school-primary)
+  );
   color: #ffffff;
 }
 
 .admissions-hero .hero-eyebrow {
-  color: var(--school-secondary);
+  color: #FFF0DF;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .admissions-hero h1 {
   max-width: 800px;
   margin-bottom: 20px;
-
+  color: #ffffff;
   font-size: clamp(42px, 6vw, 64px);
+  font-weight: 800;
 }
 
 .admissions-hero p {
   max-width: 680px;
   margin: 0;
-
-  color: #cbd5e1;
+  color: #ffffff;
   font-size: 18px;
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   INTRO / HIGHLIGHTS
-========================================================= */
+/* INTRODUCTION AND HIGHLIGHTS */
 
 .admissions-intro {
   background: #ffffff;
@@ -51,51 +51,47 @@
 
 .highlight-card {
   padding: 35px 30px;
-
   background: #ffffff;
   border: 1px solid var(--school-border);
-  border-radius: 10px;
-
-  transition: 0.2s ease;
+  border-top: 4px solid var(--school-primary);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(41, 52, 61, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .highlight-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 30px rgba(41, 52, 61, 0.1);
 }
 
 .highlight-icon {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 22px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: #fef3c7;
+  background: var(--school-secondary-light);
   color: var(--school-secondary-dark);
-
-  border-radius: 6px;
-
+  border: 1px solid #F7D7B4;
+  border-radius: 12px;
   font-size: 13px;
   font-weight: 800;
 }
 
 .highlight-card h3 {
   margin-bottom: 12px;
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
+  font-size: 21px;
 }
 
 .highlight-card p {
   margin: 0;
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   PROCESS
-========================================================= */
+/* ADMISSION PROCESS */
 
 .process-section {
   background: var(--school-background);
@@ -104,7 +100,6 @@
 .process {
   max-width: 850px;
   margin: 0 auto;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -114,45 +109,41 @@
   display: grid;
   grid-template-columns: 65px 1fr;
   gap: 20px;
-
   padding: 25px;
-
   background: #ffffff;
   border: 1px solid var(--school-border);
-  border-radius: 10px;
+  border-left: 4px solid var(--school-primary);
+  border-radius: 12px;
+  box-shadow: 0 5px 16px rgba(41, 52, 61, 0.04);
 }
 
 .step-number {
   width: 52px;
   height: 52px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: var(--school-primary);
   color: #ffffff;
-
-  border-radius: 6px;
-
+  border: 4px solid var(--school-primary-light);
+  border-radius: 50%;
   font-size: 13px;
   font-weight: 800;
 }
 
 .process-step h3 {
   margin-bottom: 7px;
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
+  font-size: 20px;
 }
 
 .process-step p {
   margin: 0;
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   REQUIREMENTS
-========================================================= */
+/* ADMISSION REQUIREMENTS */
 
 .requirements-section {
   background: #ffffff;
@@ -167,30 +158,27 @@
 
 .requirements-grid h2 {
   margin-bottom: 20px;
-
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
   font-size: clamp(30px, 4vw, 44px);
 }
 
 .requirements-grid > div:first-child p {
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
 .requirements-card {
   padding: 30px;
-
-  background: var(--school-background);
+  background: var(--school-primary-light);
   border: 1px solid var(--school-border);
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 .requirement {
   display: flex;
   align-items: center;
   gap: 14px;
-
   padding: 15px 0;
-
   border-bottom: 1px solid var(--school-border);
 }
 
@@ -199,6 +187,7 @@
 }
 
 .requirement span {
+  flex-shrink: 0;
   color: var(--school-success);
   font-weight: 800;
 }
@@ -207,12 +196,10 @@
   margin: 0;
   color: var(--school-text);
   font-size: 14px;
+  line-height: 1.7;
 }
 
-
-/* =========================================================
-   APPLICATION
-========================================================= */
+/* APPLICATION CTA */
 
 .application-section {
   background: var(--school-background);
@@ -223,11 +210,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-
   padding: 50px;
-
-  background: var(--school-primary);
-  border-radius: 12px;
+  background: linear-gradient(
+    125deg,
+    var(--school-primary-dark),
+    var(--school-primary)
+  );
+  border: 4px solid var(--school-primary-light);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(85, 181, 229, 0.15);
 }
 
 .application-box h2 {
@@ -239,14 +230,11 @@
 .application-box p {
   max-width: 650px;
   margin: 0;
-
-  color: #cbd5e1;
+  color: #ffffff;
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   CONTACT CTA
-========================================================= */
+/* CONTACT CTA */
 
 .contact-cta {
   background: #ffffff;
@@ -255,13 +243,11 @@
 .contact-cta .cta-content {
   max-width: 800px;
   margin: 0 auto;
-
   padding: 60px 40px;
-
   text-align: center;
-
   background: var(--school-primary-dark);
-  border-radius: 12px;
+  border: 4px solid var(--school-primary-light);
+  border-radius: 18px;
 }
 
 .contact-cta h2 {
@@ -273,16 +259,13 @@
 .contact-cta p {
   margin: 0 auto 28px;
   max-width: 600px;
-  color: #cbd5e1;
+  color: #ffffff;
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 850px) {
-
   .admission-highlights {
     grid-template-columns: 1fr;
   }
@@ -296,13 +279,15 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .admissions-hero {
     padding: 80px 0;
+  }
+
+  .admissions-hero p {
+    font-size: 16px;
   }
 
   .process-step {
@@ -316,5 +301,10 @@
   .contact-cta .cta-content {
     padding: 45px 25px;
   }
+}
 
+@media (prefers-reduced-motion: reduce) {
+  .highlight-card {
+    transition: none;
+  }
 }

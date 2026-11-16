@@ -1,9 +1,15 @@
+
+/* =========================================================
+   ISMAD INTERNATIONAL ACADEMY - NAVBAR
+========================================================= */
+
 .navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: #ffffff;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--school-border);
+  box-shadow: 0 3px 15px rgba(41, 52, 61, 0.06);
 }
 
 .navbar-container {
@@ -15,82 +21,165 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
+
+/* SCHOOL BRAND */
 
 .school-brand {
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: #172554;
+  color: var(--school-text);
 }
 
 .school-logo {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #172554;
+  background: var(--school-primary);
   color: #ffffff;
+
+  border: 3px solid var(--school-primary-light);
 
   font-weight: 800;
   font-size: 16px;
+
+  box-shadow: 0 3px 10px rgba(85, 181, 229, 0.2);
 }
 
 .school-name {
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .school-name strong {
-  font-size: 18px;
+  color: var(--school-primary-dark);
+  font-size: 17px;
+  font-weight: 800;
 }
 
 .school-name span {
+  margin-top: 4px;
   font-size: 12px;
-  color: #64748b;
+  color: var(--school-ash-dark);
 }
+
+/* NAVIGATION LINKS */
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
 }
 
 .nav-links a {
+  position: relative;
+  padding: 10px 0;
+
   text-decoration: none;
-  color: #334155;
+  color: var(--school-text);
+
   font-size: 14px;
   font-weight: 600;
-  transition: 0.2s ease;
+
+  transition: color 0.2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+
+  width: 0;
+  height: 3px;
+
+  background: var(--school-secondary);
+  border-radius: 10px;
+
+  transition: width 0.2s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #172554;
+  color: var(--school-primary-dark);
 }
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* MOBILE MENU BUTTON */
 
 .menu-toggle {
   display: none;
-  border: none;
-  background: transparent;
-  font-size: 28px;
+  width: 44px;
+  height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--school-border);
+  border-radius: 8px;
+
+  background: var(--school-primary-light);
+  color: var(--school-primary-dark);
+
+  font-size: 26px;
   cursor: pointer;
+
+  transition: 0.2s ease;
 }
 
+.menu-toggle:hover {
+  background: var(--school-secondary-light);
+  color: var(--school-secondary-dark);
+}
+
+/* TABLET AND MOBILE */
+
 @media (max-width: 900px) {
+  .navbar-container {
+    min-height: 70px;
+    padding: 0 20px;
+  }
 
   .nav-links {
     display: none;
   }
 
   .menu-toggle {
-    display: block;
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 14px;
+    gap: 10px;
   }
 
+  .school-logo {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .school-name strong {
+    font-size: 14px;
+  }
+
+  .school-name span {
+    font-size: 10px;
+  }
 }

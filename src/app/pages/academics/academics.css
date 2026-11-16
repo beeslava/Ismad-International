@@ -1,43 +1,43 @@
+
 /* =========================================================
-   HERO
+   ISMAD INTERNATIONAL ACADEMY - ACADEMICS
 ========================================================= */
+
+/* HERO */
 
 .academics-hero {
   padding: 110px 0;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--school-primary),
-      var(--school-primary-dark)
-    );
-
+  background: linear-gradient(
+    125deg,
+    var(--school-primary-dark),
+    var(--school-primary)
+  );
   color: #ffffff;
 }
 
 .academics-hero .hero-eyebrow {
-  color: var(--school-secondary);
+  color: #FFF0DF;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .academics-hero h1 {
   max-width: 750px;
   margin-bottom: 20px;
-
+  color: #ffffff;
   font-size: clamp(42px, 6vw, 64px);
+  font-weight: 800;
 }
 
 .academics-hero p {
   max-width: 650px;
   margin: 0;
-
-  color: #cbd5e1;
+  color: #ffffff;
   font-size: 18px;
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   APPROACH
-========================================================= */
+/* ACADEMIC APPROACH */
 
 .academics-intro {
   background: #ffffff;
@@ -51,43 +51,43 @@
 
 .approach-card {
   padding: 30px 25px;
-
   border: 1px solid var(--school-border);
-  border-radius: 10px;
-
+  border-top: 4px solid var(--school-primary);
+  border-radius: 14px;
   background: #ffffff;
-
-  transition: 0.2s ease;
+  box-shadow: 0 6px 20px rgba(41, 52, 61, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .approach-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 30px rgba(41, 52, 61, 0.1);
 }
 
 .approach-number {
+  display: inline-block;
   margin-bottom: 20px;
-
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: var(--school-secondary-light);
   color: var(--school-secondary-dark);
-
   font-size: 13px;
   font-weight: 800;
 }
 
 .approach-card h3 {
   margin-bottom: 12px;
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
+  font-size: 20px;
 }
 
 .approach-card p {
   margin: 0;
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   ACADEMIC LEVELS
-========================================================= */
+/* ACADEMIC LEVELS */
 
 .programs-section {
   background: var(--school-background);
@@ -101,60 +101,82 @@
 
 .academic-level {
   padding: 35px 30px;
-
   background: #ffffff;
   border: 1px solid var(--school-border);
-  border-radius: 10px;
+  border-bottom: 5px solid var(--school-accent);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(41, 52, 61, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.academic-level:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 32px rgba(41, 52, 61, 0.09);
 }
 
 .level-header {
   display: flex;
   align-items: center;
   gap: 15px;
-
   margin-bottom: 18px;
 }
 
 .level-header span {
-  color: var(--school-secondary-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  min-height: 38px;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--school-primary-light);
+  color: var(--school-primary-dark);
   font-size: 13px;
   font-weight: 800;
 }
 
 .level-header h3 {
   margin: 0;
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
   font-size: 23px;
 }
 
 .academic-level > p {
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
 .academic-level ul {
   margin: 24px 0 0;
   padding: 0;
-
   list-style: none;
 }
 
 .academic-level li {
-  padding: 10px 0;
-
+  position: relative;
+  padding: 11px 10px 11px 25px;
   border-bottom: 1px solid var(--school-border);
-
   color: var(--school-text);
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.academic-level li::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 17px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--school-secondary);
 }
 
 .academic-level li:last-child {
   border-bottom: none;
 }
 
-
-/* =========================================================
-   LEARNING EXPERIENCE
-========================================================= */
+/* LEARNING EXPERIENCE */
 
 .learning-section {
   background: #ffffff;
@@ -169,14 +191,15 @@
 
 .learning-content h2 {
   margin-bottom: 22px;
-
-  color: var(--school-primary);
+  color: var(--school-primary-dark);
   font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
 }
 
 .learning-content p {
   margin-bottom: 18px;
   color: var(--school-muted);
+  line-height: 1.8;
 }
 
 .learning-list {
@@ -187,28 +210,37 @@
 
 .learning-item {
   display: flex;
+  align-items: flex-start;
   gap: 18px;
-
-  padding: 20px;
-
+  padding: 22px;
   border: 1px solid var(--school-border);
-  border-radius: 8px;
-
+  border-left: 4px solid var(--school-primary);
+  border-radius: 12px;
   background: var(--school-background);
+  transition: transform 0.2s ease;
+}
+
+.learning-item:hover {
+  transform: translateX(4px);
 }
 
 .learning-item > span {
   flex-shrink: 0;
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 50%;
+  background: var(--school-secondary-light);
   color: var(--school-secondary-dark);
-
   font-size: 13px;
   font-weight: 800;
 }
 
 .learning-item h3 {
-  margin-bottom: 5px;
-  color: var(--school-primary);
+  margin-bottom: 7px;
+  color: var(--school-primary-dark);
   font-size: 17px;
 }
 
@@ -216,12 +248,10 @@
   margin: 0;
   color: var(--school-muted);
   font-size: 14px;
+  line-height: 1.7;
 }
 
-
-/* =========================================================
-   CTA
-========================================================= */
+/* CALL TO ACTION */
 
 .academics-cta {
   background: var(--school-background);
@@ -230,34 +260,34 @@
 .cta-content {
   max-width: 800px;
   margin: 0 auto;
-
   padding: 65px 40px;
-
   text-align: center;
-
-  background: var(--school-primary);
-  border-radius: 12px;
+  background: linear-gradient(
+    130deg,
+    var(--school-primary-dark),
+    var(--school-primary)
+  );
+  border: 4px solid var(--school-primary-light);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(85, 181, 229, 0.16);
 }
 
 .cta-content h2 {
   margin-bottom: 16px;
-
   color: #ffffff;
   font-size: clamp(30px, 4vw, 44px);
 }
 
 .cta-content p {
+  max-width: 600px;
   margin: 0 auto 28px;
-  color: #cbd5e1;
+  color: #ffffff;
+  line-height: 1.8;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 1000px) {
-
   .approach-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -270,13 +300,15 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .academics-hero {
     padding: 80px 0;
+  }
+
+  .academics-hero p {
+    font-size: 16px;
   }
 
   .approach-grid {
@@ -288,8 +320,19 @@
     padding: 28px 22px;
   }
 
+  .learning-item {
+    padding: 18px;
+  }
+
   .cta-content {
     padding: 45px 25px;
   }
+}
 
+@media (prefers-reduced-motion: reduce) {
+  .approach-card,
+  .academic-level,
+  .learning-item {
+    transition: none;
+  }
 }

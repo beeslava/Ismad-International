@@ -1,7 +1,11 @@
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
 .contact-page {
   min-height: 100vh;
-  background: #f8fafc;
-  color: #1e293b;
+  background: var(--school-background, #F5F8FA);
+  color: var(--school-text, #29343D);
 }
 
 /* =========================================================
@@ -15,12 +19,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background:
-    linear-gradient(
-      135deg,
-      #0f172a,
-      #1e3a8a
-    );
+  background: linear-gradient(
+    135deg,
+    var(--school-primary-dark, #55B5E5),
+    var(--school-primary, #8CCFF0)
+  );
 }
 
 .hero-overlay {
@@ -29,13 +32,18 @@
   background:
     radial-gradient(
       circle at 20% 20%,
-      rgba(59, 130, 246, 0.35),
+      rgba(255, 255, 255, 0.25),
       transparent 40%
     ),
     radial-gradient(
       circle at 80% 80%,
-      rgba(14, 165, 233, 0.25),
+      rgba(242, 140, 40, 0.22),
       transparent 40%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(233, 166, 196, 0.2),
+      transparent 45%
     );
 }
 
@@ -54,7 +62,7 @@
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #bfdbfe;
+  color: #FFF0DF;
 }
 
 .hero-content h1 {
@@ -67,11 +75,10 @@
 .hero-content p {
   max-width: 680px;
   margin: 0 auto;
-  color: #dbeafe;
+  color: rgba(255, 255, 255, 0.95);
   font-size: 17px;
   line-height: 1.8;
 }
-
 
 /* =========================================================
    CONTAINER
@@ -82,7 +89,6 @@
   margin: 0 auto;
   padding: 70px 0 100px;
 }
-
 
 /* =========================================================
    INTRO
@@ -97,7 +103,7 @@
 .section-label {
   display: inline-block;
   margin-bottom: 12px;
-  color: #2563eb;
+  color: var(--school-primary-dark, #55B5E5);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.8px;
@@ -106,7 +112,7 @@
 .contact-intro h2,
 .form-header h2 {
   margin: 0 0 16px;
-  color: #0f172a;
+  color: var(--school-text, #29343D);
   font-size: 34px;
   font-weight: 800;
 }
@@ -114,11 +120,10 @@
 .contact-intro p,
 .form-header p {
   margin: 0;
-  color: #64748b;
+  color: var(--school-muted, #687783);
   font-size: 16px;
   line-height: 1.8;
 }
-
 
 /* =========================================================
    INFORMATION CARDS
@@ -136,20 +141,20 @@
   gap: 15px;
   min-height: 150px;
   padding: 24px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--school-border, #DCE4E9);
   border-radius: 16px;
   background: #ffffff;
-  box-shadow:
-    0 8px 25px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 8px 25px rgba(41, 52, 61, 0.05);
   transition:
     transform 0.25s ease,
-    box-shadow 0.25s ease;
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .contact-info-card:hover {
   transform: translateY(-4px);
-  box-shadow:
-    0 15px 35px rgba(15, 23, 42, 0.09);
+  border-color: var(--school-primary, #8CCFF0);
+  box-shadow: 0 15px 35px rgba(41, 52, 61, 0.09);
 }
 
 .info-icon {
@@ -160,7 +165,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background: #eff6ff;
+  background: var(--school-primary-light, #E5F5FC);
   font-size: 23px;
 }
 
@@ -170,21 +175,21 @@
 
 .info-content h3 {
   margin: 0 0 8px;
-  color: #0f172a;
+  color: var(--school-text, #29343D);
   font-size: 17px;
   font-weight: 750;
 }
 
 .info-content p {
   margin: 0 0 5px;
-  color: #475569;
+  color: #47545E;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .info-content span {
   display: block;
-  color: #94a3b8;
+  color: var(--school-ash-dark, #737D87);
   font-size: 13px;
   line-height: 1.5;
 }
@@ -192,7 +197,7 @@
 .info-content a {
   display: block;
   margin-bottom: 5px;
-  color: #2563eb;
+  color: var(--school-primary-dark, #368EBF);
   font-size: 14px;
   font-weight: 650;
   text-decoration: none;
@@ -200,9 +205,9 @@
 }
 
 .info-content a:hover {
+  color: var(--school-secondary-dark, #D96D0B);
   text-decoration: underline;
 }
-
 
 /* =========================================================
    MAIN CONTACT AREA
@@ -215,18 +220,16 @@
   align-items: start;
 }
 
-
 /* =========================================================
    FORM
 ========================================================= */
 
 .contact-form-section {
   padding: 38px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--school-border, #DCE4E9);
   border-radius: 20px;
   background: #ffffff;
-  box-shadow:
-    0 10px 35px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10px 35px rgba(41, 52, 61, 0.06);
 }
 
 .form-header {
@@ -252,13 +255,13 @@
 
 .form-group label {
   margin-bottom: 8px;
-  color: #334155;
+  color: var(--school-text, #29343D);
   font-size: 14px;
   font-weight: 700;
 }
 
 .form-group label span {
-  color: #dc2626;
+  color: var(--school-danger, #DC3545);
 }
 
 .form-group input,
@@ -266,11 +269,11 @@
   width: 100%;
   box-sizing: border-box;
   padding: 13px 15px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--school-border, #DCE4E9);
   border-radius: 10px;
   outline: none;
   background: #ffffff;
-  color: #0f172a;
+  color: var(--school-text, #29343D);
   font-family: inherit;
   font-size: 14px;
   transition:
@@ -290,22 +293,20 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #94a3b8;
+  color: var(--school-ash-dark, #737D87);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #2563eb;
-  box-shadow:
-    0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--school-primary-dark, #55B5E5);
+  box-shadow: 0 0 0 3px rgba(85, 181, 229, 0.16);
 }
 
 .form-group small {
   margin-top: 7px;
-  color: #94a3b8;
+  color: var(--school-ash-dark, #737D87);
   font-size: 12px;
 }
-
 
 /* =========================================================
    ALERTS
@@ -331,17 +332,16 @@
 }
 
 .success-alert {
-  border: 1px solid #bbf7d0;
-  background: #f0fdf4;
+  border: 1px solid #BBF7D0;
+  background: #F0FDF4;
   color: #166534;
 }
 
 .error-alert {
-  border: 1px solid #fecaca;
-  background: #fef2f2;
-  color: #991b1b;
+  border: 1px solid #FECACA;
+  background: #FEF2F2;
+  color: #991B1B;
 }
-
 
 /* =========================================================
    FORM ACTIONS
@@ -365,28 +365,31 @@
   cursor: pointer;
   transition:
     background 0.2s ease,
-    transform 0.2s ease;
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .clear-button {
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
-  color: #475569;
+  border: 1px solid var(--school-ash, #A7ADB4);
+  background: var(--school-ash-light, #EEF0F2);
+  color: var(--school-text, #29343D);
 }
 
 .clear-button:hover:not(:disabled) {
-  background: #f8fafc;
+  background: #E1E5E8;
 }
 
 .submit-button {
   border: none;
-  background: #2563eb;
+  background: var(--school-secondary, #F28C28);
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(242, 140, 40, 0.2);
 }
 
 .submit-button:hover:not(:disabled) {
-  background: #1d4ed8;
+  background: var(--school-secondary-dark, #D96D0B);
   transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(242, 140, 40, 0.25);
 }
 
 .clear-button:disabled,
@@ -410,7 +413,6 @@
   animation: spin 0.7s linear infinite;
 }
 
-
 /* =========================================================
    SIDE
 ========================================================= */
@@ -424,11 +426,10 @@
 .map-card,
 .quick-contact-card {
   overflow: hidden;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--school-border, #DCE4E9);
   border-radius: 18px;
   background: #ffffff;
-  box-shadow:
-    0 10px 30px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 10px 30px rgba(41, 52, 61, 0.05);
 }
 
 .map-placeholder {
@@ -439,12 +440,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background:
-    linear-gradient(
-      145deg,
-      #eff6ff,
-      #f8fafc
-    );
+  background: linear-gradient(
+    145deg,
+    var(--school-primary-light, #E5F5FC),
+    var(--school-ash-light, #EEF0F2)
+  );
 }
 
 .map-icon {
@@ -456,21 +456,21 @@
   margin-bottom: 20px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow:
-    0 8px 25px rgba(37, 99, 235, 0.12);
+  border: 2px solid var(--school-accent, #E9A6C4);
+  box-shadow: 0 8px 25px rgba(85, 181, 229, 0.12);
   font-size: 32px;
 }
 
 .map-placeholder h3 {
   margin: 0 0 10px;
-  color: #0f172a;
+  color: var(--school-text, #29343D);
   font-size: 20px;
 }
 
 .map-placeholder p {
   max-width: 300px;
   margin: 0 0 18px;
-  color: #64748b;
+  color: var(--school-muted, #687783);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -478,12 +478,11 @@
 .map-address {
   padding: 12px 18px;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #475569;
+  background: rgba(255, 255, 255, 0.85);
+  color: #47545E;
   font-size: 13px;
   line-height: 1.6;
 }
-
 
 /* =========================================================
    QUICK CONTACT
@@ -491,17 +490,18 @@
 
 .quick-contact-card {
   padding: 26px;
+  border-top: 4px solid var(--school-accent, #E9A6C4);
 }
 
 .quick-contact-card h3 {
   margin: 0 0 10px;
-  color: #0f172a;
+  color: var(--school-text, #29343D);
   font-size: 19px;
 }
 
 .quick-contact-card p {
   margin: 0 0 20px;
-  color: #64748b;
+  color: var(--school-muted, #687783);
   font-size: 14px;
   line-height: 1.7;
 }
@@ -510,17 +510,18 @@
 .quick-email {
   display: block;
   margin-top: 10px;
-  color: #2563eb;
+  color: var(--school-primary-dark, #368EBF);
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .quick-phone:hover,
 .quick-email:hover {
+  color: var(--school-secondary-dark, #D96D0B);
   text-decoration: underline;
 }
-
 
 /* =========================================================
    ANIMATION
@@ -532,13 +533,34 @@
   }
 }
 
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.clear-button:focus-visible,
+.submit-button:focus-visible,
+.info-content a:focus-visible,
+.quick-phone:focus-visible,
+.quick-email:focus-visible {
+  outline: 3px solid var(--school-primary-dark, #55B5E5);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-info-card,
+  .clear-button,
+  .submit-button,
+  .button-spinner {
+    animation: none;
+    transition: none;
+  }
+}
 
 /* =========================================================
    RESPONSIVE
 ========================================================= */
 
 @media (max-width: 1050px) {
-
   .contact-info-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -551,12 +573,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
-
 @media (max-width: 700px) {
-
   .contact-container {
     width: min(100% - 28px, 1200px);
     padding: 50px 0 70px;
@@ -607,12 +626,9 @@
   .submit-button {
     width: 100%;
   }
-
 }
 
-
 @media (max-width: 420px) {
-
   .contact-info-card {
     padding: 20px;
   }
@@ -622,5 +638,4 @@
     height: 42px;
     font-size: 20px;
   }
-
 }
